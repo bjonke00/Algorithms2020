@@ -1,0 +1,46 @@
+package com.dailycoder;
+import java.util.ArrayList;
+import java.util.List;
+
+public class DistanceOfCharactersInString {
+
+	public List<Integer> getDistanceOfCharactersInString(String str, Character c){
+		
+		List<Integer> chosenCharacters = new ArrayList<>();
+		List<Integer> midpoints = new ArrayList<>();
+		List<Integer> distances = new ArrayList<>();
+		
+		for(int i=0; i<str.length()-1; i++) {
+			if(str.charAt(i) == c) {
+				chosenCharacters.add(i);
+			}
+		}
+
+		if(chosenCharacters.isEmpty())
+			return new ArrayList<>();
+		
+		for(int i=0; i<chosenCharacters.size()-1; i++) {
+			int j = i + 1;
+			midpoints.add((chosenCharacters.get(i)+chosenCharacters.get(j))/2);
+		}
+		
+		int index = 0;
+		int midpoint = midpoints.get(index);
+		
+		for(int i=0; i<str.length()-1; i++) {
+			int theChosenOne = chosenCharacters.get(index);
+			
+			if(i>midpoint) {
+				if(index<midpoints.size())
+					midpoints.get(index);
+				if(index<chosenCharacters.size()-1)
+					theChosenOne = chosenCharacters.get(index++);
+			}
+			
+			distances.add(Math.abs(theChosenOne)-i);
+		}
+		
+		return distances;
+	}
+	
+}

@@ -1,0 +1,21 @@
+package com.algorithmpractice;
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.junit.Test;
+
+import DistanceOfCharactersInString.DistanceOfCharactersInString;
+
+public class DistanceOfCharactersInStringTest {
+
+	@Test
+	public void test_helloworld() {
+		DistanceOfCharactersInString d = new DistanceOfCharactersInString();
+		List<Character> expectedOutput = Arrays.asList(new Character[]{'2','1','0','0','1','2','2','1','0','1'});
+		assertEquals(expectedOutput ,d.getDistanceOfCharactersInString("helloworld", 'l'));
+	}
+
+}

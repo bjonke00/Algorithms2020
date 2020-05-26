@@ -1,0 +1,40 @@
+package com.codekata.binarychop;
+
+import java.util.List;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import com.codekata.binarychop.multithread.MultiThreader;
+
+public class BinaryChop3 {
+	
+	
+	
+	public int binaryChop(List<Integer> i, List<List<Integer>> list) {
+		BinaryChop2 bc = new BinaryChop2();
+		MultiThreader mtp = new MultiThreader();
+		ExecutorService executor = Executors.newFixedThreadPool(3);
+		
+		try {
+			mtp.runTheThingFuture(executor);
+			mtp.runTheThingFuture(executor);
+			mtp.runTheThingFuture(executor);
+			mtp.runTheThingFuture(executor);
+			mtp.runTheThingFuture(executor);
+
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ExecutionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+
+		mtp.shutItDown(executor);
+		
+		return bc.binaryChop(i, array);
+	}
+	
+}

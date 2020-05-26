@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BinarySearchTest" project="AlgorithmPractice" tests="9" started="9" failures="0" errors="0" ignored="0">
+  <testsuite name="com.algorithmpractice.BinarySearchTest" time="0.0">
+    <testcase name="test1" classname="com.algorithmpractice.BinarySearchTest" time="0.0"/>
+    <testcase name="test2" classname="com.algorithmpractice.BinarySearchTest" time="0.0"/>
+    <testcase name="test3" classname="com.algorithmpractice.BinarySearchTest" time="0.0"/>
+    <testcase name="test4" classname="com.algorithmpractice.BinarySearchTest" time="0.0"/>
+    <testcase name="test5" classname="com.algorithmpractice.BinarySearchTest" time="0.0"/>
+    <testcase name="test6" classname="com.algorithmpractice.BinarySearchTest" time="0.0"/>
+    <testcase name="test7" classname="com.algorithmpractice.BinarySearchTest" time="0.0"/>
+    <testcase name="test8" classname="com.algorithmpractice.BinarySearchTest" time="0.0"/>
+    <testcase name="test9" classname="com.algorithmpractice.BinarySearchTest" time="0.0"/>
+  </testsuite>
+</testrun>

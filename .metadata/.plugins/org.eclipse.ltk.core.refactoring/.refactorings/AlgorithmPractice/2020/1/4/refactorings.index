@@ -1,0 +1,11 @@
+1579397987087	Rename local variable 'current'
+1579542151128	Rename local variable 'str'
+1579543229164	Extract method 'inputContainsNonBracket'
+1579543368482	Extract method 'incorrectOuterBrackets'
+1579543411021	Rename method 'inputContainsNonBracket'
+1579547255130	Move compilation units
+1579547277993	Rename package 'com.algorithmpractice.balancedtree'
+1579547313556	Move compilation units
+1579547335962	Move compilation unit
+1579547369770	Move compilation unit
+1579547389575	Move compilation unit

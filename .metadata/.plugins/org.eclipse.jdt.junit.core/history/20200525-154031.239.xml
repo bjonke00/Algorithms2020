@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="test" project="AlgorithmPractice" tests="65" started="65" failures="1" errors="0" ignored="0">
+  <testsuite name="com.algorithmpractice.BinarySearchTreeNearestValueTest" time="0.001">
+    <testcase name="TestCase10" classname="com.algorithmpractice.BinarySearchTreeNearestValueTest" time="0.001"/>
+    <testcase name="TestCase11" classname="com.algorithmpractice.BinarySearchTreeNearestValueTest" time="0.0"/>
+    <testcase name="TestCase1" classname="com.algorithmpractice.BinarySearchTreeNearestValueTest" time="0.0"/>
+    <testcase name="TestCase2" classname="com.algorithmpractice.BinarySearchTreeNearestValueTest" time="0.0"/>
+    <testcase name="TestCase3" classname="com.algorithmpractice.BinarySearchTreeNearestValueTest" time="0.0"/>
+    <testcase name="TestCase4" classname="com.algorithmpractice.BinarySearchTreeNearestValueTest" time="0.0"/>
+    <testcase name="TestCase5" classname="com.algorithmpractice.BinarySearchTreeNearestValueTest" time="0.0"/>
+    <testcase name="TestCase6" classname="com.algorithmpractice.BinarySearchTreeNearestValueTest" time="0.0"/>
+    <testcase name="TestCase7" classname="com.algorithmpractice.BinarySearchTreeNearestValueTest" time="0.0"/>
+    <testcase name="TestCase8" classname="com.algorithmpractice.BinarySearchTreeNearestValueTest" time="0.0"/>
+    <testcase name="TestCase9" classname="com.algorithmpractice.BinarySearchTreeNearestValueTest" time="0.0"/>
+  </testsuite>
+  <testsuite name="com.algorithmpractice.codekata.BinaryChopTest2" time="0.0">
+    <testcase name="test1" classname="com.algorithmpractice.codekata.BinaryChopTest2" time="0.0"/>
+    <testcase name="test2" classname="com.algorithmpractice.codekata.BinaryChopTest2" time="0.0"/>
+    <testcase name="test3" classname="com.algorithmpractice.codekata.BinaryChopTest2" time="0.0"/>
+    <testcase name="test4" classname="com.algorithmpractice.codekata.BinaryChopTest2" time="0.0"/>
+    <testcase name="test5" classname="com.algorithmpractice.codekata.BinaryChopTest2" time="0.0"/>
+    <testcase name="test6" classname="com.algorithmpractice.codekata.BinaryChopTest2" time="0.0"/>
+    <testcase name="test7" classname="com.algorithmpractice.codekata.BinaryChopTest2" time="0.0"/>
+    <testcase name="test8" classname="com.algorithmpractice.codekata.BinaryChopTest2" time="0.0"/>
+    <testcase name="test9" classname="com.algorithmpractice.codekata.BinaryChopTest2" time="0.0"/>
+  </testsuite>
+  <testsuite name="com.algorithmpractice.BalancedBracketsTest" time="0.001">
+    <testcase name="TestCase10" classname="com.algorithmpractice.BalancedBracketsTest" time="0.0"/>
+    <testcase name="TestCase11" classname="com.algorithmpractice.BalancedBracketsTest" time="0.0"/>
+    <testcase name="TestCase12" classname="com.algorithmpractice.BalancedBracketsTest" time="0.0"/>
+    <testcase name="TestCase13" classname="com.algorithmpractice.BalancedBracketsTest" time="0.0"/>
+    <testcase name="TestCase14" classname="com.algorithmpractice.BalancedBracketsTest" time="0.0"/>
+    <testcase name="TestCase1" classname="com.algorithmpractice.BalancedBracketsTest" time="0.0"/>
+    <testcase name="TestCase2" classname="com.algorithmpractice.BalancedBracketsTest" time="0.0"/>
+    <testcase name="TestCase3" classname="com.algorithmpractice.BalancedBracketsTest" time="0.0"/>
+    <testcase name="TestCase4" classname="com.algorithmpractice.BalancedBracketsTest" time="0.001"/>
+    <testcase name="TestCase5" classname="com.algorithmpractice.BalancedBracketsTest" time="0.0"/>
+    <testcase name="TestCase6" classname="com.algorithmpractice.BalancedBracketsTest" time="0.0"/>
+    <testcase name="TestCase7" classname="com.algorithmpractice.BalancedBracketsTest" time="0.0"/>
+    <testcase name="TestCase8" classname="com.algorithmpractice.BalancedBracketsTest" time="0.0"/>
+    <testcase name="TestCase9" classname="com.algorithmpractice.BalancedBracketsTest" time="0.0"/>
+  </testsuite>
+  <testsuite name="com.algorithmpractice.codekata.BinaryChopTest" time="0.0">
+    <testcase name="test1" classname="com.algorithmpractice.codekata.BinaryChopTest" time="0.0"/>
+    <testcase name="test2" classname="com.algorithmpractice.codekata.BinaryChopTest" time="0.0"/>
+    <testcase name="test3" classname="com.algorithmpractice.codekata.BinaryChopTest" time="0.0"/>
+    <testcase name="test4" classname="com.algorithmpractice.codekata.BinaryChopTest" time="0.0"/>
+    <testcase name="test5" classname="com.algorithmpractice.codekata.BinaryChopTest" time="0.0"/>
+    <testcase name="test6" classname="com.algorithmpractice.codekata.BinaryChopTest" time="0.0"/>
+    <testcase name="test7" classname="com.algorithmpractice.codekata.BinaryChopTest" time="0.0"/>
+    <testcase name="test8" classname="com.algorithmpractice.codekata.BinaryChopTest" time="0.0"/>
+    <testcase name="test9" classname="com.algorithmpractice.codekata.BinaryChopTest" time="0.0"/>
+  </testsuite>
+  <testsuite name="com.algorithmpractice.LongestSubsequenceTest" time="0.0">
+    <testcase name="TestCase10" classname="com.algorithmpractice.LongestSubsequenceTest" time="0.0"/>
+    <testcase name="TestCase11" classname="com.algorithmpractice.LongestSubsequenceTest" time="0.0"/>
+    <testcase name="TestCase1" classname="com.algorithmpractice.LongestSubsequenceTest" time="0.0"/>
+    <testcase name="TestCase2" classname="com.algorithmpractice.LongestSubsequenceTest" time="0.0"/>
+    <testcase name="TestCase3" classname="com.algorithmpractice.LongestSubsequenceTest" time="0.0"/>
+    <testcase name="TestCase4" classname="com.algorithmpractice.LongestSubsequenceTest" time="0.0"/>
+    <testcase name="TestCase5" classname="com.algorithmpractice.LongestSubsequenceTest" time="0.0"/>
+    <testcase name="TestCase6" classname="com.algorithmpractice.LongestSubsequenceTest" time="0.0"/>
+    <testcase name="TestCase7" classname="com.algorithmpractice.LongestSubsequenceTest" time="0.0"/>
+    <testcase name="TestCase8" classname="com.algorithmpractice.LongestSubsequenceTest" time="0.0"/>
+    <testcase name="TestCase9" classname="com.algorithmpractice.LongestSubsequenceTest" time="0.0"/>
+  </testsuite>
+  <testsuite name="com.algorithmpractice.DistanceOfCharactersInStringTest" time="0.0">
+    <testcase name="test_helloworld" classname="com.algorithmpractice.DistanceOfCharactersInStringTest" time="0.0">
+      <failure>java.lang.AssertionError: expected:&lt;[2, 1, 0, 0, 1, 2, 2, 1, 0, 1]&gt; but was:&lt;[2, 1, 0, -1, -1, 3, 2, 1, 0]&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.algorithmpractice.DistanceOfCharactersInStringTest.test_helloworld(DistanceOfCharactersInStringTest.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+
+</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="com.algorithmpractice.codekata.BinaryChopTest3" time="0.127">
+    <testcase name="test_multithreaded" classname="com.algorithmpractice.codekata.BinaryChopTest3" time="0.127"/>
+  </testsuite>
+  <testsuite name="com.algorithmpractice.BinarySearchTest" time="0.001">
+    <testcase name="test1" classname="com.algorithmpractice.BinarySearchTest" time="0.0"/>
+    <testcase name="test2" classname="com.algorithmpractice.BinarySearchTest" time="0.0"/>
+    <testcase name="test3" classname="com.algorithmpractice.BinarySearchTest" time="0.0"/>
+    <testcase name="test4" classname="com.algorithmpractice.BinarySearchTest" time="0.0"/>
+    <testcase name="test5" classname="com.algorithmpractice.BinarySearchTest" time="0.0"/>
+    <testcase name="test6" classname="com.algorithmpractice.BinarySearchTest" time="0.0"/>
+    <testcase name="test7" classname="com.algorithmpractice.BinarySearchTest" time="0.001"/>
+    <testcase name="test8" classname="com.algorithmpractice.BinarySearchTest" time="0.0"/>
+    <testcase name="test9" classname="com.algorithmpractice.BinarySearchTest" time="0.0"/>
+  </testsuite>
+</testrun>
