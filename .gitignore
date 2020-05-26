@@ -1,2 +1,6 @@
 *.metadata
 *.DS_Store
+*.settings
+*/bin
+*.classpath
+*.project
