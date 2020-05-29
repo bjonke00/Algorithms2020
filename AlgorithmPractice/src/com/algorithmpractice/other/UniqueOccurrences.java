@@ -19,7 +19,7 @@ import java.util.Set;
 //console.log(uniqueOccurrences([-3,0,1,-3,1,1,1,-3,10,0])); // true
 public class UniqueOccurrences {
 
-	//log(n) time and space
+	//O(n) time and space
 	public boolean uniqueOccurrences(List<Integer> arr) {
 		
 		Map<Integer, Integer> mapOfNumberOfOccurrences = new HashMap<>();
