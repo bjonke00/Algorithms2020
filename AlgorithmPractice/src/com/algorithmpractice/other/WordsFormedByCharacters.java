@@ -2,6 +2,7 @@ package com.algorithmpractice.other;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 // 5-find-words-that-can-be-formed-by-characters
 //You are given an array of strings words and a string chars.
@@ -20,11 +21,10 @@ import java.util.List;
 //console.log(countCharacters(words1, chars1)); // 6
 //console.log(countCharacters(words2, chars2)); // 10
 public class WordsFormedByCharacters {
-
-	//log(n^2)
+	
+	//O(n^2)
 	public int countCharacters(List<String> words, String chars) {
 		StringBuilder wordsFoundInChars = new StringBuilder();
-		
 		List<Character> charsList = new ArrayList<>();
 		
 		for(int i=0;i<chars.length();i++) {
@@ -32,7 +32,9 @@ public class WordsFormedByCharacters {
 		}
 		
 		for(String word : words) {
-			if(isInChars(word, charsList)){
+			List<Character> tempCharList = new ArrayList<>();
+			tempCharList.addAll(charsList);
+			if(isInChars(word, tempCharList)){
 				wordsFoundInChars.append(word);
 			}
 		}
@@ -40,10 +42,12 @@ public class WordsFormedByCharacters {
 		return wordsFoundInChars.length();
 	}
 
-	private boolean isInChars(String word, List<Character> charsList) {
+	private boolean isInChars(String word, List<Character> tempCharList) {
 		for (int i = 0; i < word.length(); i++) {
-			if (!charsList.contains(word.charAt(i))) {
+			if (!tempCharList.contains(word.charAt(i))) {
 				return false;
+			}else {
+				tempCharList.remove(tempCharList.indexOf(word.charAt(i)));
 			}
 		}
 		return true;

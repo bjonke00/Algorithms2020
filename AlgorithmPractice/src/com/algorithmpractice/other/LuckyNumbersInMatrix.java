@@ -21,7 +21,8 @@ import java.util.List;
 //let matrix3 = [[7,8],[1,2]]
 //console.log(luckyNumbers(matrix3)); // [7]
 
-//O(n^2)
+//O(nx+my) = O(n)
+//where n is number of rows, x is the length of the rows, m is the number of col, y is the col length
 public class LuckyNumbersInMatrix {
 
 	public class Matrix{
