@@ -19,31 +19,24 @@ import java.util.Set;
 //console.log(uniqueOccurrences([-3,0,1,-3,1,1,1,-3,10,0])); // true
 public class UniqueOccurrences {
 
-	//O(n) time and space
-	public boolean uniqueOccurrences(List<Integer> arr) {
-		
-		Map<Integer, Integer> mapOfNumberOfOccurrences = new HashMap<>();
-		Set<Integer> uniqueNumbers = new HashSet<>();
-		Set<Integer> uniqueOccurrences = new HashSet<>();
-		
-		for(Integer i : arr) {
-			if(mapOfNumberOfOccurrences.get(i) == null) {
-				mapOfNumberOfOccurrences.put(i, 1);
-				uniqueNumbers.add(i);
-			}else {
-				mapOfNumberOfOccurrences.put(i,mapOfNumberOfOccurrences.get(i)+1);
-			}
-		}
-		
-		for(Integer i : uniqueNumbers) {
-			if(uniqueOccurrences.contains(mapOfNumberOfOccurrences.get(i))) {
-				return false;
-			}else {
-				uniqueOccurrences.add(mapOfNumberOfOccurrences.get(i));
-			}
-		}
-		
-		return true;
-	}
-	
+    //O(n) time and space
+    public boolean uniqueOccurrences(List<Integer> arr) {
+
+        Map<Integer, Integer> mapOfNumberOfOccurrences = new HashMap<>();
+        for (Integer i : arr) {
+            mapOfNumberOfOccurrences.merge(i, 1, Integer::sum);
+        }
+
+        Set<Integer> uniqueOccurrences = new HashSet<>();
+        for (Integer i : mapOfNumberOfOccurrences.keySet()) {
+            if (uniqueOccurrences.contains(mapOfNumberOfOccurrences.get(i))) {
+                return false;
+            } else {
+                uniqueOccurrences.add(mapOfNumberOfOccurrences.get(i));
+            }
+        }
+
+        return true;
+    }
+
 }
