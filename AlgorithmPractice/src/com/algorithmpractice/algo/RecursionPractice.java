@@ -96,7 +96,7 @@
 //	}
 //
 //}
-package com.algorithmpractice;
+package com.algorithmpractice.algo;
 
 import java.util.HashMap;
 import java.util.Stack;

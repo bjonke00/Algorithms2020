@@ -1,10 +1,10 @@
-package com.algorithmpractice;
+package com.algorithmpractice.algo;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.algorithmpractice.BinarySearch;
+import com.algorithmpractice.algo.BinarySearch;
 import com.algorithmpractice.codekata.BinaryChop;
 
 public class BinarySearchTest {

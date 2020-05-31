@@ -1,8 +1,10 @@
-package com.algorithmpractice;
+package com.algorithmpractice.algo;
 
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+
+import com.algorithmpractice.algo.BinarySearchTreeNearestValue;
 
 public class BinarySearchTreeNearestValueTest {
 

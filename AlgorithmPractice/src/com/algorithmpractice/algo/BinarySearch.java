@@ -1,4 +1,4 @@
-package com.algorithmpractice;
+package com.algorithmpractice.algo;
 
 public class BinarySearch {
 

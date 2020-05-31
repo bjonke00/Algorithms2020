@@ -1,10 +1,10 @@
-package com.algorithmpractice;
+package com.algorithmpractice.algo;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.algorithmpractice.BalancedBrackets;
+import com.algorithmpractice.algo.BalancedBrackets;
 
 public class BalancedBracketsTest {
 
