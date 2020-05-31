@@ -24,10 +24,8 @@ public class BinaryChop3 {
 			try {
 				results.add(getResult(f));
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} catch (ExecutionException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		});
