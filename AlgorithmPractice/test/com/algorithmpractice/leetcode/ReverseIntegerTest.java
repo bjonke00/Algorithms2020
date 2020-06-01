@@ -28,4 +28,12 @@ public class ReverseIntegerTest {
 		int reverseInt = reverseInteger.reverseInteger(120);
 		assertEquals(expectedReversedInt, reverseInt);
 	}
+	
+	@Test
+	public void test4() {
+		int expectedReversedInt = 0;
+		int reverseInt = reverseInteger.reverseInteger(1534236469);
+		assertEquals(expectedReversedInt, reverseInt);
+	}
+	
 }
