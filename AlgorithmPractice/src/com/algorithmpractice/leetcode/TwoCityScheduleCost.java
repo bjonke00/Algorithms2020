@@ -4,7 +4,9 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class TwoCityScheduleCost {
-
+//	There are 2N people a company is planning to interview. The cost of flying the i-th person to city A is costs[i][0], and the cost of flying the i-th person to city B is costs[i][1].
+//	Return the minimum cost to fly every person to a city such that exactly N people arrive in each city.
+	
     public int twoCitySchedCost(int[][] costs) {
     	Comparator<int[]> c = (a,b) -> Math.abs(b[0]-b[1]) - Math.abs(a[0]-a[1]);
     	Arrays.parallelSort(costs, c);
