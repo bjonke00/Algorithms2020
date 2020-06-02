@@ -14,8 +14,13 @@ public class ReverseInteger {
 			isNegative = true;
 		}
 		
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(Integer.MIN_VALUE);
+		
 		while(value>0) {
             int rem = value%10;
+            //Integer.MAX_VALUE = 2147483647
+            //Integer.MIN_VALUE = -2147483648
             if (reversedInt > Integer.MAX_VALUE/10 || (reversedInt == Integer.MAX_VALUE / 10 && rem > 7)) return 0;
             if (reversedInt < Integer.MIN_VALUE/10 || (reversedInt == Integer.MIN_VALUE / 10 && rem < -8)) return 0;
 			reversedInt = reversedInt*10 + rem;
