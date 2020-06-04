@@ -40,20 +40,4 @@ public class PathSum {
 
 	}
 
-//	public boolean hasPathSum(TreeNode root, int sum) {
-//		return sum == findPathSum(root, 0) ? true : false);
-//	}
-//
-//	private int findPathSum(TreeNode root, int sum) {
-//		sum += root.val;
-//		while (root.left != null || root.right != null) {
-//			if (root.left != null) {
-//				findPathSum(root.left, sum);
-//			} else {
-//				findPathSum(root.right, sum);
-//			}
-//		}
-//		return sum;
-//	}
-
 }

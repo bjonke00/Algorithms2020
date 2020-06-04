@@ -22,8 +22,8 @@ public class ReshapeMatrix {
 				reshaped[i][j] = queue.poll();
 			}
 		}
-
+		
 		return reshaped;
 	}
-
+	
 }
