@@ -8,7 +8,7 @@ public class DuplicateFinder {
 // of numbers containing a single duplicate.
 // The function returns the number which is a duplicate or undefined
 // if there are no duplicates.
-
+    //O(nlog(n))
     public int findDuplicate(int[] arr) {
         if(arr.length<2)
             return -1;
