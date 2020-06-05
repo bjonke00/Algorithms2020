@@ -1,4 +1,4 @@
-package com.algorithmpractice.other;
+package com.algorithmpractice.leetcode;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;

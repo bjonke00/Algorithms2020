@@ -5,3 +5,6 @@
 *.classpath
 *.project
 *.class
+*.idea
+*.iml
+*target

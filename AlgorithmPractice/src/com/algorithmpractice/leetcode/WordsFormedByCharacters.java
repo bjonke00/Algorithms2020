@@ -1,4 +1,4 @@
-package com.algorithmpractice.other;
+package com.algorithmpractice.leetcode;
 
 import java.util.ArrayList;
 import java.util.List;

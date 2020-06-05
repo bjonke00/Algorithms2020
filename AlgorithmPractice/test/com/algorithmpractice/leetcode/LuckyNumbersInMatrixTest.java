@@ -1,13 +1,14 @@
-package com.algorithmpractice.other;
+package com.algorithmpractice.leetcode;
 
 import static org.junit.Assert.assertEquals;
 
 import java.util.Arrays;
 import java.util.List;
 
+import com.algorithmpractice.leetcode.LuckyNumbersInMatrix;
 import org.junit.Test;
 
-import com.algorithmpractice.other.LuckyNumbersInMatrix.Matrix;
+import com.algorithmpractice.leetcode.LuckyNumbersInMatrix.Matrix;
 
 public class LuckyNumbersInMatrixTest {
 //	/let matrix1 = [[3,7,8],[9,11,13],[15,16,17]];

@@ -4,7 +4,6 @@ import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.is;
 
 import org.junit.Test;
-
 import static org.hamcrest.Matchers.equalTo;
 
 public class ReshapeMatrixTest {

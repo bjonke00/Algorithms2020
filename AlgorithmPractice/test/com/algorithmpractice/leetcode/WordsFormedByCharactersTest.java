@@ -1,4 +1,4 @@
-package com.algorithmpractice.other;
+package com.algorithmpractice.leetcode;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
@@ -7,8 +7,6 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.junit.Test;
-
-import com.algorithmpractice.other.WordsFormedByCharacters;
 
 public class WordsFormedByCharactersTest {
 	
