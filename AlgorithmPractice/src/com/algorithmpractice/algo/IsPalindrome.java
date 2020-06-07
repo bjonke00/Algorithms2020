@@ -4,7 +4,7 @@ public class IsPalindrome {
 
 	//O(n) time / O(1) space ignore all non alphanumeric and case
 	public boolean isPalindrome(String s) {
-		s = s.toLowerCase().replaceAll("[^a-z]", "");
+		s = s.toLowerCase().replaceAll("[^a-z0-9]", "");
 		int left = 0;
 		int right = s.length()-1;
 
