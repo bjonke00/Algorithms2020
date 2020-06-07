@@ -2,8 +2,25 @@ package com.algorithmpractice.algo;
 
 public class IsPalindrome {
 
+	//O(n) time / O(1) space ignore all non alphanumeric and case
+	public boolean isPalindrome(String s) {
+		s = s.toLowerCase().replaceAll("[^a-z]", "");
+		int left = 0;
+		int right = s.length()-1;
+
+		while(left<right){
+			if(s.charAt(left) != s.charAt(right)){
+				return false;
+			}
+			left++;
+			right--;
+		}
+
+		return true;
+	}
+
 	//o(n^2) time and o(n) space
-	public static boolean isPalindrome3(String str) {
+	public boolean isPalindrome3(String str) {
 		String reversed = "";
 		for (int i = str.length() - 1; i > -1; i--) {
 			reversed+=str.charAt(i);
@@ -15,7 +32,7 @@ public class IsPalindrome {
 	}
 	
 	//o(n) ts
-	public static boolean isPalindrome2(String str) {
+	public boolean isPalindrome2(String str) {
 		StringBuilder sb = new StringBuilder();
 		for (int i = str.length() - 1; i > -1; i--) {
 			sb.append(str.charAt(i));
@@ -36,7 +53,7 @@ public class IsPalindrome {
 	}
 	
 	//o(n) time and o(1) aka constant space aka optimal solution
-	public static boolean isPalindrome(String str) {
+	public boolean isPalindrome0(String str) {
 		int left = 0;
 		int right = str.length()-1;
 		while(left < right){
@@ -49,8 +66,4 @@ public class IsPalindrome {
 		return true;
   }
 
-	public static void main(String[] args) {
-		System.out.println(isPalindrome("ab"));
-		System.out.println(isPalindrome("bab"));
-	}
 }
