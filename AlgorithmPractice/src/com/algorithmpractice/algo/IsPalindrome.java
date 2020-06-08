@@ -4,6 +4,32 @@ public class IsPalindrome {
 
 	//O(n) time / O(1) space ignore all non alphanumeric and case
 	public boolean isPalindrome(String s) {
+		s = s.toLowerCase();
+
+		int left = 0;
+		int right = s.length()-1;
+
+		while(left<right){
+			if(s.charAt(left)<'0' || (s.charAt(left)>'9'  && s.charAt(left)<'a') || s.charAt(left)>'z'){
+				left++;
+				continue;
+			}
+			if(s.charAt(right)<'0' || (s.charAt(right)>'9' && s.charAt(right)<'a') || s.charAt(right)>'z'){
+				right--;
+				continue;
+			}
+			if(s.charAt(left) != s.charAt(right)){
+				return false;
+			}
+			left++;
+			right--;
+		}
+
+		return true;
+	}
+
+	//O(n) time ? / O(1) space ignore all non alphanumeric and case
+	public boolean isPalindrome00(String s) {
 		s = s.toLowerCase().replaceAll("[^a-z0-9]", "");
 		int left = 0;
 		int right = s.length()-1;
