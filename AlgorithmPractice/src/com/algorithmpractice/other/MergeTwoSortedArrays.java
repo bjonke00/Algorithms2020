@@ -1,7 +1,7 @@
 package com.algorithmpractice.other;
 
 public class MergeTwoSortedArrays {
-
+    //O(n) time & space
     public int[] mergeTwoSortedArrays(int[] input1, int[] input2){
         int[] output = new int[input1.length + input2.length];
 
