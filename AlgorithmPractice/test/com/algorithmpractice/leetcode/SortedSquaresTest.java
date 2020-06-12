@@ -12,7 +12,7 @@ public class SortedSquaresTest {
 
     @Before
     public void setup(){
-
+        sortedSquares = new SortedSquares();
     }
 
     @Test
