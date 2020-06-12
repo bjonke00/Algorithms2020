@@ -5,10 +5,10 @@ import java.util.*;
 public class SortedSquares {
 //    Given an array of integers A sorted in non-decreasing order, return an array of the squares of each number, also in sorted non-decreasing order.
 
-    //O(N) time and space
+    //O(N)+2linkedLists time and space
     public int[] sortedSquares(int[] A) {
         Deque<Integer> negatives = new LinkedList();
-        Queue<Integer> positives = new LinkedList<>();
+        Queue<Integer> positives = new LinkedList();
         for(int i=0; i<A.length; i++){
             if(A[i]<0){
                 negatives.push(Math.abs(A[i]));
