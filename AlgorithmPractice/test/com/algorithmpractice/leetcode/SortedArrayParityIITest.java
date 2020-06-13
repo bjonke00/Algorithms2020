@@ -20,7 +20,7 @@ public class SortedArrayParityIITest{
     public void test(){
         int[] input = new int[]{4,2,5,7};
         int[] output = new int[]{4,5,2,7};
-        assertThat(sortedArrayParityII.sortArrayByParityII(input), is(equalTo(output));
+        assertThat(sortedArrayParityII.sortArrayByParityII(input), is(equalTo(output)));
     }
 
 //      [4,7,2,5], [2,5,4,7], [2,7,4,5] would also have been accepted.
