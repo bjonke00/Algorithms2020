@@ -10,38 +10,50 @@ public class FlipAndInvertImage {
 //    To invert an image means that each 0 is replaced by 1, and each 1 is replaced by 0. For example, inverting [0, 1, 1] results in [1, 0, 0].
 
     //O(n) time and O(1) space
-    class Solution {
-        public int[][] flipAndInvertImage(int[][] A) {
-            int C = A[0].length;
-            for (int[] row: A)
-                for (int i = 0; i < (C + 1) / 2; ++i) {
-                    int tmp = row[i] ^ 1;
-                    row[i] = row[C - 1 - i] ^ 1;
-                    row[C - 1 - i] = tmp;
-                }
+    public int[][] flipAndInvertImage(int[][] A) {
+        int C = A[0].length;
+        for (int[] row : A)
+            for (int i = 0; i < (C + 1) / 2; ++i) {
+                int tmp = row[i] ^ 1;
+                row[i] = row[C - 1 - i] ^ 1;
+                row[C - 1 - i] = tmp;
+            }
 
-            return A;
+        return A;
+    }
+
+    //O(n) time and O(1) space
+    public int[][] flipAndInvertImage1(int[][] A) {
+        //flipping
+        for (int i = 0; i < A.length; i++) {
+            for (int j = 0; j < (A[i].length + 1) / 2; j++) {
+                int tmp = A[i][j] ^ 1; //^1 is XOR operation, which will invert 0 -> 1 & 1 -> 0
+                A[i][j] = A[i][A[i].length - 1 - j] ^ 1;
+                A[i][A[i].length - 1 - j] = tmp;
+            }
         }
+
+        return A;
     }
 
     //O(n*m)*2 time and space (n*m)
-    public int[][] flipAndInvertImage(int[][] A) {
+    public int[][] flipAndInvertImage0(int[][] A) {
         //flip/reverse the array
         List<Integer> flipped = new ArrayList();
-        for(int i=0; i<A.length; i++){
-            for(int j=A[i].length-1; j>-1; j--){
+        for (int i = 0; i < A.length; i++) {
+            for (int j = A[i].length - 1; j > -1; j--) {
                 flipped.add(A[i][j]);
             }
         }
 
         //invert ints in the array
         int count = 0;
-        for(int i=0; i<A.length; i++){
-            for(int j=0; j<A[i].length; j++){
-                if(flipped.get(count)==0){
-                    A[i][j]=1;
-                }else{
-                    A[i][j]=0;
+        for (int i = 0; i < A.length; i++) {
+            for (int j = 0; j < A[i].length; j++) {
+                if (flipped.get(count) == 0) {
+                    A[i][j] = 1;
+                } else {
+                    A[i][j] = 0;
                 }
                 count++;
             }
