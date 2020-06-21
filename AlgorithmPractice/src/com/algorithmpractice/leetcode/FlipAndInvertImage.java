@@ -36,7 +36,7 @@ public class FlipAndInvertImage {
         return A;
     }
 
-    //O(n*m)*2 time and space (n*m)
+    //O(n*m) time and space (n*m)
     public int[][] flipAndInvertImage0(int[][] A) {
         //flip/reverse the array
         List<Integer> flipped = new ArrayList();
