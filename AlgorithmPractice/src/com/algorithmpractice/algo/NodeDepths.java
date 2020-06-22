@@ -2,6 +2,7 @@ package com.algorithmpractice.algo;
 
 public class NodeDepths {
 
+    //time O(n) : space O(D)
     public static int nodeDepths(BinaryTree root) {
         return nodeDepthsHelper(root, 0);
     }
