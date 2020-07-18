@@ -1,0 +1,28 @@
+ public int countNodesOfBinaryTree(TreeNode root) {
+        int nodeCount = 0;
+        //create a stack for dfs approach
+        Stack<TreeNode> stack = new Stack();
+        //create a hashet for keeping track of seen nodes
+        Set<TreeNode> seen = new HashSet();
+        
+        //push the root node to the stack
+        stack.push(root);
+        //while the stack is not empty
+        while(!stack.empty()){
+            //pop the first node off the stack
+            TreeNode current = stack.pop();
+            //process the node if it is unseen -- process will be to count the node
+            if(!seen.contains(current)){
+                seen.add(current);
+                nodeCount++;
+            }
+            //add all unseen child nodes to the stack
+            if(current.left != null && !seen.contains(current.left)){
+                stack.push(current.left);
+            }
+            if(current.right != null && !seen.contains(current.right)){
+                stack.push(current.right);
+            }
+        }
+        return nodeCount;
+    }    

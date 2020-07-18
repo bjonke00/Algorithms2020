@@ -1,4 +1,6 @@
-
+given two non-empty arrays determine if the first array is a subsequence of the seconde
+(numbers don't have to be adjacent)
+    
     var array = Arrays.asList(5, 1, 22, 25, 6, -1, 8, 10);
     var sequence = Arrays.asList(1, 6, -1, 10);
 1, 5 no
