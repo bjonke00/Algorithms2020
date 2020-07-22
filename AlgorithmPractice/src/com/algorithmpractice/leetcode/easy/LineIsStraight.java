@@ -1,6 +1,7 @@
 package com.algorithmpractice.leetcode.easy;
 
 public class LineIsStraight {
+    //O(n) time, O(1) space
     public boolean checkStraightLine(int[][] coordinates) {
         int x1 = coordinates[0][0], x2 = coordinates[1][0];
         int y1 = coordinates[0][1], y2 = coordinates[1][1];
