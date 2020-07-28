@@ -1,5 +1,6 @@
-package com.algorithmpractice.algo;
+package com.algorithmpractice.algo.medium;
 
+import com.algorithmpractice.algo.medium.GroupAnagrams;
 import org.junit.Before;
 import org.junit.Test;
 

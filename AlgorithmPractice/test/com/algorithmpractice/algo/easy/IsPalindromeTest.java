@@ -1,4 +1,4 @@
-package com.algorithmpractice.algo;
+package com.algorithmpractice.algo.easy;
 
 import org.junit.Before;
 import org.junit.Test;

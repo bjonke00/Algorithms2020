@@ -1,4 +1,4 @@
-package com.algorithmpractice.algo;
+package com.algorithmpractice.algo.medium;
 
 import org.junit.Before;
 import org.junit.Test;

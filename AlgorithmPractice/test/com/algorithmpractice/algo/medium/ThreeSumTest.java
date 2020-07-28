@@ -1,9 +1,10 @@
-package com.algorithmpractice.algo;
+package com.algorithmpractice.algo.medium;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import com.algorithmpractice.algo.medium.ThreeSum;
 import org.junit.Test;
 
 public class ThreeSumTest {

@@ -1,4 +1,4 @@
-package com.algorithmpractice.algo;
+package com.algorithmpractice.algo.hard;
 
 public class ReverseLinkedList {
 	//O(n) time and o(1) space

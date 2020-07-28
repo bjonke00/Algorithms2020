@@ -1,4 +1,4 @@
-package com.algorithmpractice.algo;
+package com.algorithmpractice.algo.medium;
 
 import java.util.LinkedList;
 import java.util.Queue;

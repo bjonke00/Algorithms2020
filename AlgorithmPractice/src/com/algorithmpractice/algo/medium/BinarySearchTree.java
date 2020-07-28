@@ -1,4 +1,4 @@
-package com.algorithmpractice.algo;
+package com.algorithmpractice.algo.medium;
 
 public class BinarySearchTree {
     static class BST {

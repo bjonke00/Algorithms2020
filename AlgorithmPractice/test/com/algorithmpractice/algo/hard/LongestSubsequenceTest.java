@@ -1,10 +1,8 @@
-package com.algorithmpractice.algo;
+package com.algorithmpractice.algo.hard;
 
 import java.util.List;
 
 import org.junit.Test;
-
-import com.algorithmpractice.algo.LongestSubsequence;
 
 public class LongestSubsequenceTest {
 
