@@ -21,19 +21,20 @@ public class PathSumTest {
 	@Test
 	public void test() {
 		
-		TreeNode node1 = pathSum.createTreeNode(4);
-		TreeNode node2 = pathSum.createTreeNode(8);
-		TreeNode node3 = pathSum.createTreeNode(11);
-		TreeNode node4 = pathSum.createTreeNode(13);
-		TreeNode node5 = pathSum.createTreeNode(4);
-		TreeNode node6 = pathSum.createTreeNode(7);
-		TreeNode node7 = pathSum.createTreeNode(2);
-		TreeNode node8 = pathSum.createTreeNode(1);
-		TreeNode root = pathSum.createTreeNode(5, node1, node2);
-		node1 = pathSum.createTreeNode(4, node3, null);
-		node2 = pathSum.createTreeNode(8, node4, node5);
-		node3 = pathSum.createTreeNode(11, node6, node7);
-		node5 = pathSum.createTreeNode(4, null, node8);
+		TreeNode node4 = pathSum.createTreeNode(4);
+		TreeNode node8 = pathSum.createTreeNode(8);
+		TreeNode node11 = pathSum.createTreeNode(11);
+		TreeNode node13 = pathSum.createTreeNode(13);
+		TreeNode node41 = pathSum.createTreeNode(4);
+		TreeNode node7 = pathSum.createTreeNode(7);
+		TreeNode node2 = pathSum.createTreeNode(2);
+		TreeNode node1 = pathSum.createTreeNode(1);
+
+		TreeNode left2 = pathSum.createTreeNode(11, node7, node2);
+		TreeNode right2 = pathSum.createTreeNode(4, null, node1);
+		TreeNode left1 = pathSum.createTreeNode(4, left2, null);
+		TreeNode right1 = pathSum.createTreeNode(8, node13, right2);
+		TreeNode root = pathSum.createTreeNode(5, left1, right1);
 
 		assertEquals(true, pathSum.hasPathSum(root, 22));
 	}
