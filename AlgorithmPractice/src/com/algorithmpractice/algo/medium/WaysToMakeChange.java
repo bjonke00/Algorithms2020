@@ -1,6 +1,7 @@
 package com.algorithmpractice.algo.medium;
 
 public class WaysToMakeChange {
+    //time nm space n
     public int numberOfWaysToMakeChange(int n, int[] denoms) {
         int ways[] = new int[n+1];
         ways[0] = 1;
