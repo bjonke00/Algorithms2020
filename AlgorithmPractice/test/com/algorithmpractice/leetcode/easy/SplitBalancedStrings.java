@@ -1,6 +1,7 @@
 package com.algorithmpractice.leetcode.easy;
 
 public class SplitBalancedStrings {
+    //time O(n) space O(1)
     public int splitBalancedStrings(String s) {
         int count = 0;
         int output = 0;
