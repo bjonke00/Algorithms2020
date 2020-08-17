@@ -6,9 +6,9 @@ public class WaysToMakeChange {
         int ways[] = new int[n+1];
         ways[0] = 1;
         for(int denom : denoms){
-            for(int i=1; i<=n; i++){
-                if(denom <= i){
-                    ways[i] += ways[i - denom];
+            for(int amount=1; amount<=n; amount++){
+                if(denom <= amount){
+                    ways[amount] += ways[amount - denom];
                 }
             }
         }
