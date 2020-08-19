@@ -51,10 +51,7 @@ public class IsPalindrome {
 		for (int i = str.length() - 1; i > -1; i--) {
 			reversed+=str.charAt(i);
 		}
-		if (str.equals(reversed)) {
-			return true;
-		}
-		return false;
+		return str.equals(reversed);
 	}
 	
 	//o(n) ts
@@ -63,19 +60,13 @@ public class IsPalindrome {
 		for (int i = str.length() - 1; i > -1; i--) {
 			sb.append(str.charAt(i));
 		}
-		if (str.equals(sb.toString())) {
-			return true;
-		}
-		return false;
+		return str.equals(sb.toString());
 	}
 	
 	//O(n) ts
 	public static boolean isPalindrome1(String str) {
 		StringBuilder sb = new StringBuilder(str);
-		if (sb.toString().equals(sb.reverse().toString())) {
-			return true;
-		}
-		return false;
+		return sb.toString().equals(sb.reverse().toString());
 	}
 	
 	//o(n) time and o(1) aka constant space aka optimal solution

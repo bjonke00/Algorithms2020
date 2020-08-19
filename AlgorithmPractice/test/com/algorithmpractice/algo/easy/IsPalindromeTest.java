@@ -17,7 +17,7 @@ public class IsPalindromeTest {
     @Test
     public void test1(){
         String input = "A man, a plan, a canal: Panama";
-        assertTrue(isPalindrome.isPalindrome(input));
+        assertTrue(isPalindrome.isPalindrome00(input));
     }
 
     @Test
