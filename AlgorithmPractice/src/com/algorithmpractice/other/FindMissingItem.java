@@ -5,6 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class FindMissingItem {
+    //time O(n) | space O(1)
     public static int findMissingItem(int[] arr1, int[] arr2) {
         int sum = 0;
         for (int i : arr1) {
