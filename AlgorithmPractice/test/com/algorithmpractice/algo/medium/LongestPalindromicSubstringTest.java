@@ -10,6 +10,7 @@ public class LongestPalindromicSubstringTest {
     public void TestCase1() {
         LongestPalindromicSubstring longestPalSubstr = new LongestPalindromicSubstring();
         assertTrue(longestPalSubstr.longestPalindromicSubstring("abaxyzzyxf").equals("xyzzyx"));
+        assertTrue(longestPalSubstr.longestPalindromicSubstring_basic("abaxyzzyxf").equals("xyzzyx"));
     }
 
 }
