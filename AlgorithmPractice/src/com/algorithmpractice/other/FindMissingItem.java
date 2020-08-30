@@ -9,7 +9,7 @@ public class FindMissingItem {
     public static int findMissingItem(int[] arr1, int[] arr2) {
         int sum = 0;
         for (int i : arr1) {
-            //sum+=i;
+//            sum+=i;
             sum ^= i;
         }
         for (int i : arr2) {
