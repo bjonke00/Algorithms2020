@@ -17,8 +17,8 @@ public class KthLargestNumber {
         return arr.get(kthLargestIdx);
     }
 
-    //using a heap -> O(mlogn)
-    //try using partitioning -> O(2n)
+    //using a heap -> O(mlogn) - you can use a PriorityQueue in java essentially a heap
+    //try using partitioning -> O(n + n/2 + n/4 + n/8 + n/16) = O(2n) = O(n)
 
     @Test
     public void testKthLargestNumber(){
