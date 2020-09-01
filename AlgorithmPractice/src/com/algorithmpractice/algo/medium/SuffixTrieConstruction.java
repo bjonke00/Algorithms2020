@@ -3,7 +3,7 @@ package com.algorithmpractice.algo.medium;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SuffixTreeConstruction {
+public class SuffixTrieConstruction {
 
     public static class TrieNode {
         Map<Character, TrieNode> children = new HashMap<Character, TrieNode>();
