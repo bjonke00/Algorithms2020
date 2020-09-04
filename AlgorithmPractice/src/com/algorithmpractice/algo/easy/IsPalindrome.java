@@ -70,7 +70,7 @@ public class IsPalindrome {
 	}
 	
 	//o(n) time and o(1) aka constant space aka optimal solution
-	public boolean isPalindrome0(String str) {
+	public boolean isPalindrome_pointers_from_outside(String str) {
 		int left = 0;
 		int right = str.length()-1;
 		while(left < right){
@@ -82,5 +82,23 @@ public class IsPalindrome {
 		}
 		return true;
   }
+
+	public boolean isPalindrome_pointers_from_center(String str) {
+		//reverse the string, iterate through each string comparing if they are the same - n ts
+		//n time constant space - 2 pointers moving into center or out from center, here I'll start from center
+		int p1, p2=str.length()/2;
+		if(str.length()%2 == 0){ // even
+			p1 = p2 - 1;
+		}else{ // odd
+			p1 = p2;
+		}
+		while(p1 >= 0 && p2 < str.length()){
+			if(str.charAt(p1) != str.charAt(p2))
+				return false;
+			p1--;
+			p2++;
+		}
+		return true;
+	}
 
 }
