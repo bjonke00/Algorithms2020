@@ -2,10 +2,18 @@ package com.algorithmpractice.algo.medium;
 
 public class LongestPalindromicSubstring {
 
-    //Treat every char as the potential center of palindrome (aka odd chars)
-    //And treat every char + nextChar as the potential center of palindrome (aka even chars)
-    //Eliminating extra looping
-    //time O(n^2) | space O(1)
+    /*Treat every char as the potential center of palindrome (aka odd chars)
+    And treat every char + nextChar as the potential center of palindrome (aka even chars)*/
+
+    /*Iterate through once considering the current index as the potential center
+    have a left and right pointer to check if it is a palindrome
+    move the pointers out until you get the greatest possible for that point
+    keep track of the indices of the greatest palindrome
+    two scenarios - odd and even - ex of odd aba - example of even is abba
+    for odd consider the current index and current index + 1 as the the center
+    rotate between the odd and even check as you iterate through*/
+
+    //    time O(n^2) | space O(1)
     public static String longestPalindromicSubstring(String str) {
         int[] longestPalSubstrIndices = {0,1};
 
