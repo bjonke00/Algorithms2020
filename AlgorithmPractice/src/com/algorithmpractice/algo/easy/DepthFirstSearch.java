@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DepthFirstSearch {
-
+	//Time O(e + v) | space O(v)
 	static class Node {
 		String name;
 		List<Node> children = new ArrayList<Node>();
@@ -15,9 +15,7 @@ public class DepthFirstSearch {
 
 		public List<String> depthFirstSearch(List<String> array) {
 			array.add(this.name);
-			for (int i = 0; i < this.children.size(); i++) {
-				this.children.get(i).depthFirstSearch(array);
-			}
+			this.children.forEach(child->child.depthFirstSearch(array));
 			return array;
 		}
 
