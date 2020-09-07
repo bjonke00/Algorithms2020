@@ -1,0 +1,40 @@
+
+static class Node{
+    String name;
+    List<Node> children;
+}
+
+//bfs
+//time : O(e+v) | space (v)
+public List<String> bfs(List<String> array){
+    Queue<Node> queue = new LinkedList<>();
+    queue.add(this);
+
+    while(queue.peek() != null){
+        Node n = queue.poll();
+        array.add(n.name);
+        for(Node child : n.children){
+            queue.add(child);
+        }   
+    }
+
+    return array;
+}
+    a
+   / \
+  b   c
+ /
+d
+q:
+arr: a, b, c, d  
+
+
+//dfs
+//time : O(e+v) | space (v)
+public List<String> dfs(List<String> array){
+    array.add(this.name);
+    for(Node child : this.children){
+        child.dfs(array);
+    }
+    return array;
+}
