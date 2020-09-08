@@ -70,11 +70,11 @@ public class Boggle {
             neighbors.add(new Integer[]{row + 1, col - 1});
         }
         //lower
-        if(row < board[row].length - 1){
+        if(row < board.length - 1){
             neighbors.add(new Integer[]{row + 1, col});
         }
         //right-lower-diagonal
-        if(row < board[row].length - 1 && col < board[row].length - 1){
+        if(row < board.length - 1 && col < board[row].length - 1){
             neighbors.add(new Integer[]{row + 1, col + 1});
         }
 
