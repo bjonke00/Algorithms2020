@@ -1,5 +1,6 @@
-package com.algorithmpractice.algo.easy;
+package com.algorithmpractice.algo.tree.easy;
 
+import com.algorithmpractice.algo.tree.easy.NodeDepths;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -25,8 +26,13 @@ public class NodeDepthsTest {
         root.right = new NodeDepths.BinaryTree(3);
         root.right.left = new NodeDepths.BinaryTree(6);
         root.right.right = new NodeDepths.BinaryTree(7);
-        int actual = NodeDepths.nodeDepths(root);
-        assertEquals(16, actual);
+        int actual1 = NodeDepths.nodeDepths(root);
+        int actual2 = NodeDepths.nodeDepthsLevels(root);
+        int actual3 = NodeDepths.nodeDepthsRecursive(root);
+        assertEquals(16, actual1);
+        assertEquals(16, actual2);
+        assertEquals(16, actual3);
+
     }
 
 }
