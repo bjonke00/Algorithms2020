@@ -1,4 +1,4 @@
-package com.algorithmpractice.algo.graph.med;
+package com.algorithmpractice.algo.graph.medium;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
