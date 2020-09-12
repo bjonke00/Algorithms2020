@@ -6,32 +6,42 @@ import java.util.List;
 import java.util.Queue;
 
 public class BreadthFirstSearch {
+	static class Node {
+		String name;
+		List<Node> children = new ArrayList<Node>();
 
-    //O(v+e) time and O(v) space
-    public List<String> breadthFirstSearch(List<String> array) {
-        Queue<Node> queue = new LinkedList<>();
-        queue.add(this);
-        while (!queue.isEmpty()) {
-            Node currentNode = queue.poll();
-            array.add(currentNode.name);
-            currentNode.children.forEach(child -> queue.add(child));
-        }
+		public Node(String name) {
+			this.name = name;
+		}
 
-        return array;
-    }
+		//O(v+e) time and O(v) space
+		public List<String> breadthFirstSearch(List<String> array) {
+			Queue<Node> queue = new LinkedList<>();
+			queue.add(this);
+			while (!queue.isEmpty()) {
+				Node currentNode = queue.poll();
+				array.add(currentNode.name);
+				currentNode.children.forEach(child -> queue.add(child));
+			}
 
-    static class Node {
-        String name;
-        List<Node> children = new ArrayList<Node>();
+			return array;
+		}
 
-        public Node(String name) {
-            this.name = name;
-        }
+		public Node addChild(String name) {
+			Node child = new Node(name);
+			children.add(child);
+			return this;
+		}
+	}
 
-        public Node addChild(String name) {
-            Node child = new Node(name);
-            children.add(child);
-            return this;
-        }
-    }
+	public static void main(String[] args) {
+		Node n = new Node("A");
+		n.addChild("B").addChild("C").addChild("D");
+		n.children.get(0).addChild("E").addChild("F");
+		n.children.get(2).addChild("G").addChild("H");
+		n.children.get(0).children.get(1).addChild("I").addChild("J");
+		n.children.get(2).children.get(0).addChild("K");
+		List<String> a = n.breadthFirstSearch(new ArrayList<String>());
+		a.forEach(i -> System.out.println(i));
+	}
 }
