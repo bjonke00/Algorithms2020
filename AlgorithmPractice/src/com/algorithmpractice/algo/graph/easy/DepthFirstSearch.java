@@ -1,4 +1,4 @@
-package com.algorithmpractice.algo.easy;
+package com.algorithmpractice.algo.graph.easy;
 
 import java.util.ArrayList;
 import java.util.List;
