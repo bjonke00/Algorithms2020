@@ -1,4 +1,4 @@
-package com.algorithmpractice.algo.medium;
+package com.algorithmpractice.algo.binarytree.medium;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -9,11 +9,11 @@ import static org.junit.Assert.*;
 
 public class InvertBinaryTreeTest {
 
-    private InvertBinaryTree ibt;
+    private com.algorithmpractice.algo.binarytree.medium.InvertBinaryTree ibt;
 
     @Before
     public void setIbt(){
-        ibt = new InvertBinaryTree();
+        ibt = new com.algorithmpractice.algo.binarytree.medium.InvertBinaryTree();
     }
 
     @Test
@@ -26,7 +26,7 @@ public class InvertBinaryTreeTest {
         assertTrue(compareBT(tree, invertedTree));
     }
 
-    private boolean compareBT(InvertBinaryTree.BinaryTree tree1, InvertedBinaryTree tree2) {
+    private boolean compareBT(com.algorithmpractice.algo.binarytree.medium.InvertBinaryTree.BinaryTree tree1, InvertedBinaryTree tree2) {
         if (tree1 == null && tree2 == null) {
             return true;
         }
@@ -70,7 +70,7 @@ public class InvertBinaryTreeTest {
         }
     }
 
-    class TestBinaryTree extends InvertBinaryTree.BinaryTree {
+    class TestBinaryTree extends com.algorithmpractice.algo.binarytree.medium.InvertBinaryTree.BinaryTree {
         public TestBinaryTree(int value) {
             super(value);
         }
@@ -79,12 +79,12 @@ public class InvertBinaryTreeTest {
             if (i >= values.length) {
                 return;
             }
-            ArrayDeque<InvertBinaryTree.BinaryTree> queue = new ArrayDeque<InvertBinaryTree.BinaryTree>();
+            ArrayDeque<com.algorithmpractice.algo.binarytree.medium.InvertBinaryTree.BinaryTree> queue = new ArrayDeque<com.algorithmpractice.algo.binarytree.medium.InvertBinaryTree.BinaryTree>();
             queue.addLast(this);
             while (queue.size() > 0) {
-                InvertBinaryTree.BinaryTree current = queue.pollFirst();
+                com.algorithmpractice.algo.binarytree.medium.InvertBinaryTree.BinaryTree current = queue.pollFirst();
                 if (current.left == null) {
-                    current.left = new InvertBinaryTree.BinaryTree(values[i]);
+                    current.left = new com.algorithmpractice.algo.binarytree.medium.InvertBinaryTree.BinaryTree(values[i]);
                     break;
                 }
                 queue.addLast(current.left);

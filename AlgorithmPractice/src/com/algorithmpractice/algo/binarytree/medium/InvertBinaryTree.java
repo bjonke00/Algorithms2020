@@ -1,12 +1,13 @@
-package com.algorithmpractice.algo.medium;
+package com.algorithmpractice.algo.binarytree.medium;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class InvertBinaryTree {
+
     //time O(n) / space O(d)
     public void invertBinaryTree(BinaryTree tree) {
-        if(tree == null){
+        if (tree == null) {
             return;
         }
         swap(tree);
@@ -18,19 +19,19 @@ public class InvertBinaryTree {
     public static void invertBinaryTree1(BinaryTree tree) {
         Queue<BinaryTree> queue = new LinkedList();
         queue.add(tree);
-        while(!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             BinaryTree current = queue.poll();
             swap(current);
-            if(current.left != null){
+            if (current.left != null) {
                 queue.add(current.left);
             }
-            if(current.right != null){
+            if (current.right != null) {
                 queue.add(current.right);
             }
         }
     }
 
-    private static void swap(BinaryTree tree){
+    private static void swap(BinaryTree tree) {
         BinaryTree left = tree.left;
         tree.left = tree.right;
         tree.right = left;
