@@ -1,4 +1,4 @@
-package com.algorithmpractice.algo.tree.easy;
+package com.algorithmpractice.algo.binarytree.easy;
 
 import java.util.LinkedList;
 import java.util.Queue;

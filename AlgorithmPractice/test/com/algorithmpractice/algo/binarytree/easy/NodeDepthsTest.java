@@ -1,6 +1,5 @@
-package com.algorithmpractice.algo.tree.easy;
+package com.algorithmpractice.algo.binarytree.easy;
 
-import com.algorithmpractice.algo.tree.easy.NodeDepths;
 import org.junit.Before;
 import org.junit.Test;
 
