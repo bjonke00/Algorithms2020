@@ -21,13 +21,13 @@ public class SearchSuggestedProductsTest {
         }
     }
 
+    //starting with 2 characters
     @Test
     public void test1() {
         List<String> repo = new ArrayList<>(asList("mobile", "mouse", "moneypot", "monitor", "mousepad"));
         String product = "mouse";
 
         List<List<String>> expected = asList(
-                asList("mobile", "moneypot", "monitor"),
                 asList("mobile", "moneypot", "monitor"),
                 asList("mouse", "mousepad"),
                 asList("mouse", "mousepad"),
@@ -44,7 +44,6 @@ public class SearchSuggestedProductsTest {
         String product = "bags";
 
         List<List<String>> expected = asList(
-                asList("baggage","bags","banner"),
                 asList("baggage","bags","banner"),
                 asList("baggage","bags"),
                 asList("bags")
@@ -64,10 +63,44 @@ public class SearchSuggestedProductsTest {
                 asList("havana"),
                 asList("havana"),
                 asList("havana"),
-                asList("havana"),
                 asList("havana")
         );
         List<List<String>> actual2 = SearchSuggestedProducts.suggestedProducts(repo, product);
+        assertEquals(expected, actual2);
+    }
+
+    @Test
+    public void test4() {
+        List<String> repo = new ArrayList<>(asList("havana"));
+        String product = "tatiana";
+
+        List<List<String>> expected = asList(
+                asList(),
+                asList(),
+                asList(),
+                asList(),
+                asList(),
+                asList()
+        );
+        List<List<String>> actual2 = SearchSuggestedProducts.suggestedProducts(repo, product);
+        assertEquals(expected, actual2);
+    }
+
+    //case insensitive
+    @Test
+    public void test5() {
+        List<String> repo = new ArrayList<>(asList("abcdefg", "abc", "aBc", "Z", "a"));
+        String product = "abcdefG";
+
+        List<List<String>> expected = asList(
+                asList("abc","aBc", "abcdefg"),
+                asList("abc","aBc", "abcdefg"),
+                asList("abcdefg"),
+                asList("abcdefg"),
+                asList("abcdefg"),
+                asList("abcdefg")
+        );
+        List<List<String>> actual2 = SearchSuggestedProducts.suggestedProductsCaseInsensitive(repo, product);
         assertEquals(expected, actual2);
     }
 
