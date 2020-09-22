@@ -1,4 +1,4 @@
-package com.algorithmpractice.algo.hard;
+package com.algorithmpractice.algo.arrays.hard;
 
 import javafx.application.Application;
 import javafx.stage.Stage;

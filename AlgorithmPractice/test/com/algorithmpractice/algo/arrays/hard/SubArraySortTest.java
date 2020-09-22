@@ -1,6 +1,6 @@
-package com.algorithmpractice.algo.binarytree.hard;
+package com.algorithmpractice.algo.arrays.hard;
 
-import com.algorithmpractice.algo.hard.SubArraySort;
+import com.algorithmpractice.algo.arrays.hard.SubArraySort;
 import org.junit.Test;
 
 import java.util.Arrays;
