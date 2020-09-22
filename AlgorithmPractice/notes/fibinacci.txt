@@ -1,0 +1,80 @@
+// 0 1 1 2 3 5 8 13 21 34 55 89 144
+//n^2 time n space
+public int fib(int n){
+    if(n <= 1){
+        return n;
+    }else{
+        return fib(n-1)+fib(n-2);
+    }
+}
+
+pushes 5,4,3,2,1 onto stack
+stack :
+f(1)
+f(2)
+f(3)
+f(4)
+f(5)
+
+hits base case -> pops and processes f(1)
+stack :
+f(2)
+f(3)
+f(4)
+f(5)
+
+processes f(2) it then calls fib(n-2) or pushes f(0)
+stack :
+f(0)
+f(2)
+f(3)
+f(4)
+f(5)
+
+hits base case -> pops and processes f(0)
+f(2) returns f(1) + f(0) to f(3)
+stack :
+f(2)
+f(3)
+f(4)
+f(5)
+
+processes f(3) it then calls fib(n-2) or pushes f(1)
+stack :
+f(1)
+f(3)
+f(4)
+f(5)
+
+hits base case -> pops and processes f(1)
+stack :
+f(3)
+f(4)
+f(5)
+
+pops and processes f(3)  
+f(3) returns f(2) + f(1) to f(4)
+stack :
+f(4)
+f(5)
+
+etc ... 
+
+
+//n time n space
+public int fib_memoized(int n){
+    Map<Integer, Integer> cache = new HashMap();
+    cache.put(0,0);
+    cache.put(1,1);
+    return fib(n, cache);
+}
+
+public int fib(int n, Map<Integer,Integer> cache){
+    if(cache.containsKey(n)){
+        return cache.get(n);
+    }else{
+        cache.put(n, fib(n-1,cache)+fib(n-2,cache));
+        return cache.get(n);
+    }
+}
+
