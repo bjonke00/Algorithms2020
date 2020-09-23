@@ -4,7 +4,7 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 
 public class SubArraySort {
-
+    //O(n) time and O(1) space
     public static int[] subarraySort(int[] array) {
         int minUnsorted = Integer.MAX_VALUE;
         int maxUnsorted = Integer.MIN_VALUE;
