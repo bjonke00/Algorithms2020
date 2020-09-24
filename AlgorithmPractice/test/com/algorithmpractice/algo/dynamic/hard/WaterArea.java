@@ -3,8 +3,33 @@ package com.algorithmpractice.algo.dynamic.hard;
 import java.util.stream.IntStream;
 
 public class WaterArea {
-    //time O(n) | space O(n)
+    //time O(n) | space O(1)
     public static int waterArea(int[] heights) {
+        if(heights.length == 0)
+            return 0;
+
+        int leftIdx = 0;
+        int rightIdx = heights.length - 1;
+        int leftMax = heights[leftIdx];
+        int rightMax = heights[rightIdx];
+        int waterArea = 0;
+        while(leftIdx < rightIdx){
+            if(heights[leftIdx] < heights[rightIdx]){
+                leftIdx++;
+                leftMax = Math.max(leftMax, heights[leftIdx]);
+                waterArea += leftMax - heights[leftIdx];
+            }else{
+                rightIdx--;
+                rightMax = Math.max(rightMax, heights[rightIdx]);
+                waterArea += rightMax - heights[rightIdx];
+            }
+        }
+
+        return waterArea;
+    }
+
+    //time O(n) | space O(n)
+    public static int waterAreaInLinearSpace(int[] heights) {
         if(heights.length < 1)
             return 0;
 
