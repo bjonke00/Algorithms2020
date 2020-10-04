@@ -1,4 +1,4 @@
-package com.algorithmpractice.algo.arrays.extreme;
+package com.algorithmpractice.algo.dynamic.extreme;
 
 import java.util.ArrayList;
 import java.util.Arrays;

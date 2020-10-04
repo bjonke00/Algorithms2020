@@ -1,5 +1,6 @@
-package com.algorithmpractice.algo.arrays.extreme;
+package com.algorithmpractice.algo.dynamic.extreme;
 
+import com.algorithmpractice.algo.dynamic.extreme.LongestIncreasingSubsequence;
 import org.junit.Test;
 
 import java.util.List;
