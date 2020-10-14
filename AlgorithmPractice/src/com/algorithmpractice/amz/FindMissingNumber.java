@@ -13,7 +13,7 @@ public class FindMissingNumber {
             min = Math.min(min,ints[i]);
         }
         int expectedSum = min;
-        for(int i = 0; i < ints.length + 1; i++){
+        for(int i = 0; i < ints.length; i++){
             min++;
             expectedSum += min;
         }
