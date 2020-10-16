@@ -41,6 +41,8 @@ public class ApartmentHuntingTest {
 
         String[] reqs = new String[] {"gym", "school", "store"};
         assertTrue(ApartmentHunting.apartmentHunting(blocks, reqs) == 3);
+        assertTrue(ApartmentHunting.apartmentHunting1(blocks, reqs) == 3);
+
     }
 
     @Test
@@ -133,5 +135,7 @@ public class ApartmentHuntingTest {
 
         String[] reqs = new String[] {"gym", "pool", "school", "store"};
         assertTrue(ApartmentHunting.apartmentHunting(blocks, reqs) == 4);
+        assertTrue(ApartmentHunting.apartmentHunting1(blocks, reqs) == 4);
+
     }
 }
