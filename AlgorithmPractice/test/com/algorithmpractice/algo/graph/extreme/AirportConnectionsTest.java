@@ -1,5 +1,6 @@
 package com.algorithmpractice.algo.graph.extreme;
 
+import com.sun.xml.internal.bind.v2.TODO;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -18,7 +19,7 @@ public class AirportConnectionsTest {
 
     String STARTING_AIRPORT = "LGA";
 
-//    @Test TODO:revisit algorithm
+    @Test
     public void TestCase1() {
         List<List<String>> routes = new ArrayList<List<String>>();
         routes.add(new ArrayList<String>(Arrays.asList("DSM", "ORD")));
