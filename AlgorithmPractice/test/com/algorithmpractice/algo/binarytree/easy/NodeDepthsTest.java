@@ -26,7 +26,7 @@ public class NodeDepthsTest {
         root.right.left = new NodeDepths.BinaryTree(6);
         root.right.right = new NodeDepths.BinaryTree(7);
         int actual1 = NodeDepths.nodeDepths(root);
-        int actual2 = NodeDepths.nodeDepthsLevels(root);
+        int actual2 = NodeDepths.nodeDepthsStack(root);
         int actual3 = NodeDepths.nodeDepthsRecursive(root);
         assertEquals(16, actual1);
         assertEquals(16, actual2);

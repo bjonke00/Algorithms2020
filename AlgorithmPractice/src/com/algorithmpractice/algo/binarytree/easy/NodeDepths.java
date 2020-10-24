@@ -2,6 +2,7 @@ package com.algorithmpractice.algo.binarytree.easy;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 public class NodeDepths {
 
@@ -13,7 +14,7 @@ public class NodeDepths {
         while(!queue.isEmpty()){
             BinaryTree node = queue.poll();
             int depth = node.depth;
-            totalDepth += depth;
+            totalDepth += node.depth;
             if(node.left != null){
                 node.left.depth = depth + 1;
                 queue.add(node.left);
@@ -27,33 +28,24 @@ public class NodeDepths {
     }
 
     //time O(n) : space O(D)
-    public static int nodeDepthsLevels(BinaryTree root) {
-        int totalDepth = 0;
-        Queue<Level> queue = new LinkedList<>();
-        queue.add(new Level(root, 0));
-        while(!queue.isEmpty()){
-            Level level = queue.poll();
-            int depth = level.depth;
-            totalDepth += depth;
-            BinaryTree node = level.node;
-            if(node.left != null){
-                queue.add(new Level(node.left, depth + 1));
+    public static int nodeDepthsStack(BinaryTree root) {
+        Stack<BinaryTree> stack = new Stack<>();
+        root.depth = 0;
+        stack.push(root);
+        int sumOfDepths = 0;
+        while(!stack.isEmpty()){
+            BinaryTree tree = stack.pop();
+            sumOfDepths += tree.depth;
+            if(tree.left != null){
+                tree.left.depth = tree.depth + 1;
+                stack.push(tree.left);
             }
-            if(node.right != null){
-                queue.add(new Level(node.right, depth + 1));
+            if(tree.right != null){
+                tree.right.depth = tree.depth + 1;
+                stack.push(tree.right);
             }
         }
-        return totalDepth;
-    }
-
-    static class Level{
-        BinaryTree node;
-        int depth;
-
-        public Level(BinaryTree node, int depth){
-            this.node = node;
-            this.depth = depth;
-        }
+        return sumOfDepths;
     }
 
     //time O(n) : space O(D)
