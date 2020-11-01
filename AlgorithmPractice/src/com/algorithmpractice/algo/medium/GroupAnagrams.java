@@ -26,13 +26,7 @@ public class GroupAnagrams {
             anagrams.put(sortedWord, temp);
         }
 
-        //output
-        List<List<String>> output = new ArrayList();
-
-        //retrieve the words from the map and add to output
-        anagrams.forEach((k, v) -> output.add(v));
-
-        return output;
+        return new ArrayList(anagrams.values());
     }
 
 }
