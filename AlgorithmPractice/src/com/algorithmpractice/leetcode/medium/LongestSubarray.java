@@ -3,7 +3,7 @@ package com.algorithmpractice.leetcode.medium;
 import java.util.PriorityQueue;
 
 public class LongestSubarray {
-    //O(n) time and O(1) space
+    //O(nlog(m)) time and O(m) space - where n is the length of nums and m is the size of the priority queue (inserting and removing from the priority queue is log(m))
     public int longestSubarray(int[] nums, int limit) {
         int left = 0;
         int right = 0;
