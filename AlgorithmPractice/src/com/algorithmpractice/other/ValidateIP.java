@@ -22,7 +22,7 @@ public class ValidateIP {
                     return false;
                 }
             }
-            
+
             if(Integer.parseInt(number) < 0 || Integer.parseInt(number) > 255){
                 return false;
             }
