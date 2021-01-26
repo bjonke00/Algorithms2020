@@ -14,6 +14,15 @@ public class NodeDepthsTest {
         nodeDepths = new NodeDepths();
     }
 
+    /*
+             1
+           /   \
+          2     3
+         / \   / \
+        4   5 6   7
+       / \
+      8   9
+     */
     @Test
     public void TestCase1() {
         NodeDepths.BinaryTree root = new NodeDepths.BinaryTree(1);
@@ -25,12 +34,11 @@ public class NodeDepthsTest {
         root.right = new NodeDepths.BinaryTree(3);
         root.right.left = new NodeDepths.BinaryTree(6);
         root.right.right = new NodeDepths.BinaryTree(7);
-        int actual1 = NodeDepths.nodeDepths(root);
-        int actual2 = NodeDepths.nodeDepthsStack(root);
-        int actual3 = NodeDepths.nodeDepthsRecursive(root);
-        assertEquals(16, actual1);
-        assertEquals(16, actual2);
-        assertEquals(16, actual3);
+
+        assertEquals(16, NodeDepths.nodeDepths(root));
+        assertEquals(16, NodeDepths.nodeDepthsStack(root));
+        assertEquals(16, NodeDepths.nodeDepthsRecursive(root));
+        assertEquals( 4, NodeDepths.getHeightOfTree(root));
 
     }
 

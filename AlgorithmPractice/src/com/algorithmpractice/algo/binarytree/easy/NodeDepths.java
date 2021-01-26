@@ -59,6 +59,14 @@ public class NodeDepths {
         return depth + nodeDepthsHelper(root.left, depth+1) + nodeDepthsHelper(root.right, depth+1);
     }
 
+    public static int getHeightOfTree(BinaryTree root){
+        if(root == null){
+            return 0;
+        }
+
+        return Math.max(getHeightOfTree(root.left), getHeightOfTree(root.right))+ 1;
+    }
+
     static class BinaryTree {
         int value;
         BinaryTree left;
