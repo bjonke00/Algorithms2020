@@ -42,4 +42,16 @@ public class MergeLinkedListTest {
                 new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
         assertTrue(getNodesInArray(output).equals(expectedNodes));
     }
+
+    @Test
+    public void TestCase2() {
+        MergeLinkedList.LinkedList list1 = new MergeLinkedList.LinkedList(2);
+        addMany(list1, new ArrayList<Integer>(Arrays.asList(6, 7, 8)));
+        MergeLinkedList.LinkedList list2 = new MergeLinkedList.LinkedList(1);
+        addMany(list2, new ArrayList<Integer>(Arrays.asList(3, 4, 5, 9, 10)));
+        MergeLinkedList.LinkedList output = MergeLinkedList.mergeTwoLists(list1, list2);
+        List<Integer> expectedNodes =
+                new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+        assertTrue(getNodesInArray(output).equals(expectedNodes));
+    }
 }

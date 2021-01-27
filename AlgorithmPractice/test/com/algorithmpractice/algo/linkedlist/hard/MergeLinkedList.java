@@ -36,4 +36,28 @@ public class MergeLinkedList {
         return headOne.value < headTwo.value ? headOne : headTwo;
     }
 
+    public static LinkedList mergeTwoLists(LinkedList l1, LinkedList l2) {
+        LinkedList head = new LinkedList(-1);
+        LinkedList prev = head;
+        while(l1 != null && l2 != null){
+            if(l1.value < l2.value){
+                prev.next = l1;
+                l1 = l1.next;
+            }else{
+                prev.next = l2;
+                l2 = l2.next;
+            }
+            prev = prev.next;
+        }
+
+        if(l1 == null){
+            prev.next = l2;
+        }else{
+            prev.next = l1;
+        }
+
+
+        return head.next;
+    }
+
 }
