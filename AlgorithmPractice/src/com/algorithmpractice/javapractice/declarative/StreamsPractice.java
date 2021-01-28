@@ -1,4 +1,4 @@
-package com.algorithmpractice.javapractice;
+package com.algorithmpractice.javapractice.declarative;
 
 import org.junit.Test;
 
