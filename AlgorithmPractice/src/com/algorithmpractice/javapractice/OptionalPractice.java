@@ -1,8 +1,6 @@
 package com.algorithmpractice.javapractice;
 
-import apple.applescript.AppleScriptEngine;
 import org.junit.Test;
-import sun.jvm.hotspot.HelloWorld;
 
 import java.sql.SQLOutput;
 import java.util.Optional;
