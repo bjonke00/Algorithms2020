@@ -12,6 +12,7 @@ public class StringPool {
 
         System.out.println(cat1 == cat2);
         System.out.println(cat1 == cat3);
+        System.out.println(cat1.equals(cat3));
 
         
     }
