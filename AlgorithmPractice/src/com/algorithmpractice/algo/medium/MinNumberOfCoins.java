@@ -3,6 +3,25 @@ package com.algorithmpractice.algo.medium;
 import java.util.Arrays;
 
 public class MinNumberOfCoins {
+
+    //O(a * n) where a is the amount and n is the number of coins
+    //O(a) where n is the amount + 1
+    public static int findMinCoinChange(int[] coins, int amount) {
+        int [] minCoins = new int[amount + 1];
+        Arrays.fill(minCoins, amount + 1);
+        minCoins[0] = 0;
+
+        for(int i = 1; i < amount + 1; i++){
+            for(int coin : coins){
+                if(coin <= i){
+                    minCoins[i] = Math.min(minCoins[i - coin] + 1, minCoins[i]);
+                }
+            }
+        }
+
+        return minCoins[amount] > amount ? -1 : minCoins[amount];
+    }
+
     //time (nm) space(n)
     public static int minNumberOfCoinsForChange(int n, int[] denoms) {
         int[] numOfCoins = new int[n + 1];
