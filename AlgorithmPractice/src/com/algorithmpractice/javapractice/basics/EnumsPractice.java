@@ -2,7 +2,7 @@ package com.algorithmpractice.javapractice.basics;
 
 public class EnumsPractice {
 
-    enum Days{
+    enum Day{
         MONDAY, TUESDAY, WEDNESDAY
     }
 
@@ -15,9 +15,9 @@ public class EnumsPractice {
         }
     }
     public static void main(String[] args) {
-        Days monday = Days.MONDAY;
+        Day monday = Day.MONDAY;
 
-        for(Days day : Days.values()){
+        for(Day day : Day.values()){
             System.out.println(day);
         }
 
