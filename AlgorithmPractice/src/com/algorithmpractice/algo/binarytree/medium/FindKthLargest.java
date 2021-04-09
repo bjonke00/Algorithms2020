@@ -54,8 +54,8 @@ public class FindKthLargest {
     @Test
     public void testFindKthLargestInBST() {
         int k = 3;
-        var expected = 17;
-        var actual = new FindKthLargest().findKthLargestValueInBst(root, k);
+        int expected = 17;
+        int actual = new FindKthLargest().findKthLargestValueInBst(root, k);
         assertTrue(expected == actual);
     }
 
@@ -78,8 +78,8 @@ public class FindKthLargest {
     @Test
     public void testFindKthLargestInTree() {
         int k = 3;
-        var expected = 17;
-        var actual = new FindKthLargest().findKthLargestValueInTree(root, k);
+        int expected = 17;
+        int actual = new FindKthLargest().findKthLargestValueInTree(root, k);
         assertTrue(expected == actual);
     }
 
